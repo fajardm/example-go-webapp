@@ -37,7 +37,7 @@ func editHandler(res http.ResponseWriter, req *http.Request) {
 	if err != nil {
 		page = &Page{Title: title}
 	}
-	renderTemplate(res, "view", page)
+	renderTemplate(res, "edit", page)
 }
 
 func renderTemplate(res http.ResponseWriter, v string, page *Page) {
